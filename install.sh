@@ -1,40 +1,44 @@
 #!/bin/bash
 
-function ask() {
-  read -p "$1 (Y/n): " resp
-  [ -z "$response" ] || [ "$response" = "y" ]
-}
-
 echo "[] Configuration setup..."
 
 # Check if Homebrew is installed, and install it if not
-echo "Checking if Homebrew is installed"
+echo "[] Checking if Homebrew is installed"
 
 if ! command -v brew &> /dev/null; then
-  echo "Homebrew not found, installing..."
+  echo "[Homebrew] Homebrew not found, installing..."
   # run brew install but mute the output
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" > /dev/null
 else
-  echo "Homebrew is already installed."
+  echo "[Homebrew] Homebrew is already installed."
 fi
 
-echo "Installing brew apps..."
-# run brew bundle and mute the output
-/bin/bash -c "$(brew bundle ./Brew/Brewfile)" > /dev/null
+echo "[Homebrew] Installing brew apps..."
+# run brew bundle and mute error output
+brew bundle --file ./Brew/Brewfile  > /dev/null
 
-echo "[] Installing zsh extensions..."
-git submodule add git@github.com:djui/alias-tips.git zsh/.zsh/extensions/alias-tips
-git submodule add git@github.com:zsh-users/zsh-autosuggestions.git zsh/.zsh/extensions/zsh-autosuggestions
+echo "[zsh] running git submodule init and update"
+git submodule init
+git submodule update
 
-echo "[] creating git symlinks"
+echo "[zsh] creating git symlinks"
 stow git
 
-echo "[] creating zsh symlinks"
+echo "[zsh] creating zsh symlinks"
 stow zsh
 
+echo "[vscode] creating vscode symlinks"
+echo "[vscode] creating symlink to ~/Library/Application Support/Code/User/..."
+stow -t ~/Library/Application\ Support/Code/User vscode
+# stow -t vscode
 
 
 # Inital idea was to manually create Symlinks... instead we will use stow
+
+# function ask() {
+#   read -p "$1 (Y/n): " resp
+#   [ -z "$response" ] || [ "$response" = "y" ]
+# }
 
 # for file in shell/*
 # do
