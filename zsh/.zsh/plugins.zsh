@@ -1,5 +1,6 @@
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/alias-tips/alias-tips.plugin.zsh
+source ~/.zsh/extensions/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/extensions/alias-tips/alias-tips.plugin.zsh
+
 source $ZSH/oh-my-zsh.sh
 
 plugins=(

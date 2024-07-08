@@ -26,8 +26,8 @@ brew "tfenv"
 brew "nvim"
 
 # font
-brew "font-jetbrains-mono-nerd-font"
-brew "font-fira-code"
+cask 'font-jetbrains-mono-nerd-font'
+cask "font-fira-code"
 
 # Graphical applications
 cask "discord"
@@ -40,7 +40,7 @@ cask "visual-studio-code"
 cask "whatsapp"
 cask "imageoptim" # image optimisation
 cask "rectangle" # window manager
-cask "arc"
+# cask "arc"
 brew "pinentry-mac" # GPG key graphical input
 
 # VScode extenstions
