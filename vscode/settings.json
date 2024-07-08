@@ -1,77 +1,113 @@
 {
-  "editor.wordWrap": "on",
-  "editor.tabSize": 2,
-  "editor.fontSize": 12,
-  "editor.letterSpacing": 0.75,
-  "editor.renderWhitespace": "all",
-  "editor.formatOnSave": false,
-  "files.autoSave": "onFocusChange",
-  "git.autofetch": true,
-  "editor.acceptSuggestionOnEnter": "on",
-  "window.titleBarStyle": "custom",
-  "workbench.colorTheme": "Gruvbox Dark Soft",
-  "liveshare.guestApprovalRequired": false,
-  "debug.inlineValues": "off",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "liveshare.featureSet": "insiders",
-  "task.slowProviderWarning": [
-      "typescript"
-  ],
-  "liveshare.allowGuestDebugControl": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "git.enableSmartCommit": true,
-  "editor.bracketPairColorization.enabled": true,
-  "files.trimTrailingWhitespace": true,
-  "editor.renderFinalNewline": "off",
-  "git.confirmSync": false,
-  "editor.semanticHighlighting.enabled": false,
-  "window.restoreWindows": "none",
-  "workbench.colorCustomizations": {
-      "statusBar.debuggingBackground": "#ed882f"
-  },
-  "files.exclude": {
-      "**/.git": false,
-      "**/.svn": true,
-      "**/.hg": true,
-      "**/CVS": true,
-      "**/.DS_Store": true
-  },
-  "workbench.iconTheme": "material-icon-theme",
-  "explorer.confirmDragAndDrop": false,
-  "workbench.editor.enablePreview": false,
-  "editor.renderControlCharacters": false,
-  "editor.fontLigatures": true,
-  "editor.fontFamily": "Fira Code",
-  "breadcrumbs.enabled": true,
-  "editor.suggestSelection": "first",
-  "editor.formatOnPaste": false,
-  "editor.formatOnType": true,
-  "editor.formatOnSaveMode": "modifications",
-  "editor.detectIndentation": true,
-  "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit"
-  },
-  "debug.javascript.autoAttachFilter": "onlyWithFlag",
-  "security.workspace.trust.untrustedFiles": "open",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.cursorBlinking": "phase",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "diffEditor.ignoreTrimWhitespace": false,
-  "redhat.telemetry.enabled": false,
-  "go.toolsManagement.autoUpdate": true,
-  "markdown-preview-enhanced.previewTheme": "atom-material.css",
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "githubPullRequests.pullBranch": "never",
-  "github.copilot.enable": {
-      "*": true,
-      "plaintext": true,
-      "markdown": true,
-      "scminput": false,
-      "yaml": false
-  },
-  "editor.stickyScroll.enabled": true,
-  "editor.inlineSuggest.enabled": true,
+    // font/text settings
+    "chat.editor.fontFamily": "Fira Code",
+    "debug.console.fontFamily": "Fira Code",
+    "editor.codeLensFontFamily": "Fira Code",
+    "notebook.output.fontFamily": "Fira Code",
+    "markdown.preview.fontFamily": "Fira Code",
+    "editor.inlayHints.fontFamily": "Fira Code",
+    "apc.font.family": "Fira Code",
+    "apc.monospace.font.family": "Fira Code",
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2,
+    "editor.fontSize": 12,
+    "editor.letterSpacing": 0.75,
+    "editor.renderWhitespace": "all",
+
+    // saving settings
+    "editor.formatOnSave": false,
+    "files.autoSave": "onFocusChange",
+
+    // theme settings
+    "window.titleBarStyle": "custom",
+    "workbench.colorTheme": "Gruvbox Dark Soft",
+
+    // todo settings
+    "git.autofetch": true,
+    "editor.acceptSuggestionOnEnter": "on",
+
+    "debug.inlineValues": "off",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "task.slowProviderWarning": [
+        "typescript"
+    ],
+    "python.languageServer": "Default",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "git.enableSmartCommit": true,
+    "editor.bracketPairColorization.enabled": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.renderFinalNewline": "off",
+
+    "window.restoreWindows": "none",
+    "workbench.colorCustomizations": {
+        "statusBar.debuggingBackground": "#ed882f"
+    },
+    "files.exclude": {
+        "**/.git": false,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "explorer.confirmDragAndDrop": false,
+    "workbench.editor.enablePreview": false,
+    "editor.renderControlCharacters": false,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code",
+    "breadcrumbs.enabled": true,
+    "editor.suggestSelection": "first",
+    "eslint.run": "onType",
+    "eslint.format.enable": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": true,
+    "editor.formatOnSaveMode": "modifications",
+    "editor.detectIndentation": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "debug.javascript.autoAttachFilter": "onlyWithFlag",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "phase",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "redhat.telemetry.enabled": false,
+    "go.toolsManagement.autoUpdate": true,
+    "markdown-preview-enhanced.previewTheme": "atom-material.css",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "workbench.editorAssociations": {
+        "git-rebase-todo": "gitlens.rebase"
+    },
+    "githubPullRequests.pullBranch": "never",
+    "cSpell.userWords": [
+        "beamery",
+        "behaviour",
+        "Bidewell",
+        "cloudformation",
+        "Hasher"
+    ],
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false,
+        "yaml": true
+    },
+    "editor.stickyScroll.enabled": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.inlineSuggest.enabled": true,
+    "gitlens.ai.experimental.openai.model": "gpt-4-32k",
+    "nxConsole.showNodeVersionOnStartup": false,
+    "diffEditor.renderSideBySide": false,
+    "workbench.activityBar.location": "top",
+    "jest.autoRun": {},
+    "github.copilot.editor.enableAutoCompletions": true,
+    "scm.showChangesSummary": false,
+    "update.mode": "manual", // stops auto running of all tests
 }
