@@ -49,7 +49,6 @@
         "**/CVS": true,
         "**/.DS_Store": true
     },
-    "workbench.iconTheme": "vscode-icons",
     "explorer.confirmDragAndDrop": false,
     "workbench.editor.enablePreview": false,
     "editor.renderControlCharacters": false,
@@ -109,5 +108,6 @@
     "jest.autoRun": {},
     "github.copilot.editor.enableAutoCompletions": true,
     "scm.showChangesSummary": false,
-    "update.mode": "manual", // stops auto running of all tests
+    "update.mode": "manual",  // stops auto running of all tests
+    "workbench.iconTheme": "material-icon-theme",
 }
