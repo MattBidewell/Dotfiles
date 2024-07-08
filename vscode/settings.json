@@ -1,0 +1,77 @@
+{
+  "editor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "editor.fontSize": 12,
+  "editor.letterSpacing": 0.75,
+  "editor.renderWhitespace": "all",
+  "editor.formatOnSave": false,
+  "files.autoSave": "onFocusChange",
+  "git.autofetch": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "window.titleBarStyle": "custom",
+  "workbench.colorTheme": "Gruvbox Dark Soft",
+  "liveshare.guestApprovalRequired": false,
+  "debug.inlineValues": "off",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "liveshare.featureSet": "insiders",
+  "task.slowProviderWarning": [
+      "typescript"
+  ],
+  "liveshare.allowGuestDebugControl": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.enableSmartCommit": true,
+  "editor.bracketPairColorization.enabled": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.renderFinalNewline": "off",
+  "git.confirmSync": false,
+  "editor.semanticHighlighting.enabled": false,
+  "window.restoreWindows": "none",
+  "workbench.colorCustomizations": {
+      "statusBar.debuggingBackground": "#ed882f"
+  },
+  "files.exclude": {
+      "**/.git": false,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "explorer.confirmDragAndDrop": false,
+  "workbench.editor.enablePreview": false,
+  "editor.renderControlCharacters": false,
+  "editor.fontLigatures": true,
+  "editor.fontFamily": "Fira Code",
+  "breadcrumbs.enabled": true,
+  "editor.suggestSelection": "first",
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": true,
+  "editor.formatOnSaveMode": "modifications",
+  "editor.detectIndentation": true,
+  "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+  },
+  "debug.javascript.autoAttachFilter": "onlyWithFlag",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "phase",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "redhat.telemetry.enabled": false,
+  "go.toolsManagement.autoUpdate": true,
+  "markdown-preview-enhanced.previewTheme": "atom-material.css",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "githubPullRequests.pullBranch": "never",
+  "github.copilot.enable": {
+      "*": true,
+      "plaintext": true,
+      "markdown": true,
+      "scminput": false,
+      "yaml": false
+  },
+  "editor.stickyScroll.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+}
