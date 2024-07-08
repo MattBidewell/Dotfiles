@@ -1,0 +1,75 @@
+# extend list of packages..
+tap "homebrew/bundle"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/services"
+tap "heroku/brew"
+tap "golangci/tap"
+tap "goreleaser/tap"
+tap "homebrew/autoupdate"
+
+# Linux commands..
+brew "curl"
+brew "grep"
+brew "htop"
+brew "jq" # JSON terminal processor
+brew "tree"
+brew "thefuck" # command corrector
+brew "fzf" # fuzzy find
+brew "stow" # symlink bulk link creator
+
+# Programming languages and tools
+brew "go"
+brew "nvm" # Node version manager
+brew "tfenv"
+brew "nvim"
+
+# font
+brew "font-jetbrains-mono-nerd-font"
+brew "font-fira-code"
+
+# Graphical applications
+cask "discord"
+cask "docker"
+cask "google-chrome"
+cask "notion"
+cask "slack"
+cask "spotify"
+cask "visual-studio-code"
+cask "whatsapp"
+cask "imageoptim" # image optimisation
+cask "rectangle" # window manager
+cask "arc"
+brew "pinentry-mac" # GPG key graphical input
+
+# VScode extenstions
+vscode "arcticicestudio.nord-visual-studio-code"
+vscode "christian-kohler.npm-intellisense"
+vscode "davidanson.vscode-markdownlint"
+vscode "esbenp.prettier-vscode"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "github.vscode-pull-request-github"
+vscode "golang.go"
+vscode "hashicorp.terraform"
+vscode "humao.rest-client"
+vscode "jdinhlife.gruvbox"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
+vscode "ms-vscode-remote.vscode-remote-extensionpack"
+vscode "ms-vscode.remote-explorer"
+vscode "ms-vscode.remote-server"
+vscode "ms-vsliveshare.vsliveshare"
+vscode "pkief.material-icon-theme"
+vscode "pnp.polacode"
+vscode "redhat.vscode-yaml"
+vscode "robbowen.synthwave-vscode"
+vscode "shd101wyy.markdown-preview-enhanced"
+vscode "silofy.hackthebox"
+vscode "streetsidesoftware.code-spell-checker"
+vscode "visualstudioexptteam.intellicode-api-usage-examples"
+vscode "visualstudioexptteam.vscodeintellicode"
+vscode "wesbos.theme-cobalt2"

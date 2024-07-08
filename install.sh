@@ -20,25 +20,38 @@ fi
 
 echo "Installing brew apps..."
 # run brew bundle and mute the output
-/bin/bash -c "$(brew bundle ./brew/Brewfile)" > /dev/null
+/bin/bash -c "$(brew bundle ./Brew/Brewfile)" > /dev/null
 
-for file in shell/*
-do
-  fullpath=$(realpath $path)
+echo "[] Installing zsh extensions..."
+git submodule add git@github.com:djui/alias-tips.git zsh/.zsh/extensions/alias-tips
+git submodule add git@github.com:zsh-users/zsh-autosuggestions.git zsh/.zsh/extensions/zsh-autosuggestions
 
-  if ask "Source $file"; then
-    echo "source $fullpath"
-    # echo "source $fullpath" >> ~/.bashrc
-  fi
-done
+echo "[] creating git symlinks"
+stow git
 
+echo "[] creating zsh symlinks"
+stow zsh
+
+
+
+# Inital idea was to manually create Symlinks... instead we will use stow
+
+# for file in shell/*
+# do
+#   fullpath=$(realpath $path)
+
+#   if ask "Source $file"; then
+#     echo "source $fullpath"
+#     # echo "source $fullpath" >> ~/.bashrc
+#   fi
+# done
 # for file in ""
-# loop through dot files and create symbolic links in ~/.
-echo "Creating symbolic links for dotfiles..."
-for file in "TBC"; do
-  if ask "Add $file?"; then
-    ln -s "$(realpath "$file")" ~/${file}
-  fi
-done
+# # loop through dot files and create symbolic links in ~/.
+# echo "Creating symbolic links for dotfiles..."
+# for file in "TBC"; do
+#   if ask "Add $file?"; then
+#     ln -s "$(realpath "$file")" ~/${file}
+#   fi
+# done
 
-
+# stow -v -t ~ shell
