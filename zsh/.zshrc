@@ -4,7 +4,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="af-magic"
+ZSH_THEME="amuse"
 
 # source custom configurations from ~/.zsh directory
 source ~/.zsh/aliases.zsh # For alias definitions.
@@ -28,6 +28,4 @@ source $ZSH/oh-my-zsh.sh
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 

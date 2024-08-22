@@ -76,7 +76,7 @@
     "diffEditor.ignoreTrimWhitespace": false,
     "redhat.telemetry.enabled": false,
     "go.toolsManagement.autoUpdate": true,
-    "markdown-preview-enhanced.previewTheme": "atom-material.css",
+    "markdown-preview-enhanced.previewTheme": "github-dark.css",
     "javascript.updateImportsOnFileMove.enabled": "always",
     "workbench.editorAssociations": {
         "git-rebase-todo": "gitlens.rebase"
@@ -110,4 +110,5 @@
     "scm.showChangesSummary": false,
     "update.mode": "manual",  // stops auto running of all tests
     "workbench.iconTheme": "material-icon-theme",
+    "workbench.layoutControl.enabled": false,
 }
