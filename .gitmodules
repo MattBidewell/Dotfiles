@@ -4,3 +4,6 @@
 [submodule "zsh/.zsh/extensions/zsh-autosuggestions"]
 	path = zsh/.zsh/extensions/zsh-autosuggestions
 	url = git@github.com:zsh-users/zsh-autosuggestions.git
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:MattBidewell/kickstart.nvim.git

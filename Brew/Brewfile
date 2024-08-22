@@ -24,6 +24,7 @@ brew "go"
 brew "nvm" # Node version manager
 brew "tfenv"
 brew "nvim"
+brew "luarocks"
 
 # font
 cask 'font-jetbrains-mono-nerd-font'

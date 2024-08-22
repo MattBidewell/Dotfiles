@@ -30,6 +30,12 @@ stow zsh
 echo "[vscode] creating vscode symlinks"
 echo "[vscode] creating symlink to ~/Library/Application Support/Code/User/..."
 stow -t ~/Library/Application\ Support/Code/User vscode
+
+# make sure nvim config directory exists
+mkdir -p "${XDG_CONFIG_HOME:-$HOME/.config}/nvim"
+
+echo "[nvim] creating nvim symlinks"
+stow -t "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim nvim
 # stow -t vscode
 
 
