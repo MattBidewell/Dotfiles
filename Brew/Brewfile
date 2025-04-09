@@ -43,6 +43,7 @@ cask "imageoptim" # image optimisation
 cask "rectangle" # window manager
 # cask "arc"
 brew "pinentry-mac" # GPG key graphical input
+brew "obsidian" # note taking app
 
 # VScode extenstions
 vscode "arcticicestudio.nord-visual-studio-code"
